@@ -35,9 +35,7 @@
         --white: hsl(0, 0%, 100%);
         --pale-blue: hsl(225, 100%, 96%);
         --light-lavender: hsl(241, 100%, 98%);
-        --dark-gray-blue: hsl(244, 30%, 27%);
-
-        --dark-gray-blue2: hsl(223, 28%, 26%);
+        --dark-gray-blue: hsl(223, 28%, 26%);
 
         --desktop-font-size: 18px;
         --mobile-font-size: 16px;
@@ -68,7 +66,7 @@
       }
 
       body {
-        font-size: 18px;
+        font-size: var(--desktop-font-size);
         font-family: var(--default-font-family);
       }
 
@@ -276,19 +274,86 @@
         height: 55px;
         border: none;
         border-radius: 30px;
-        font-size: 18px;
+        font-size: var(--desktop-font-size);
         color: var(--white);
-        background: var(--dark-gray-blue2);
+        background: var(--dark-gray-blue);
       }
 
-      @media (max-width: 375px) {
+      @media (max-width: 770px) {
         .attribution {
           font-size: 10px;
         }
 
+        body {
+          font-size: var(--mobile-font-size);
+        }
+
+        .container {
+          align-items: flex-start;
+        }
+
         .contents-container {
           width: 375px;
+          height: 100vh;
           flex-direction: column;
+        }
+
+        .result--conatiner {
+          width: 375px;
+          height: 360px;
+          color: var(--white);
+        }
+
+        .result--section-container {
+          margin-top: 24px;
+        }
+
+        .result--section {
+          border-radius: 0 0 35px 35px;
+        }
+
+        .result--title--container {
+          font-size: 18px;
+        }
+
+        .result--score--container {
+          width: 140px;
+          height: 150px;
+          border-radius: 50%;
+        }
+
+        .result--score {
+          font-size: 60px;
+        }
+
+        .result--desc-title {
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+
+        .result--desc {
+          margin-bottom: 42px;
+        }
+
+        .summary--section-container {
+          margin-top: 28px;
+        }
+
+        .summary--title-container {
+          font-size: 18px;
+        }
+
+        .summary--score-container {
+          flex-grow: 0;
+        }
+
+        .summary--score {
+          margin-bottom: 13px;
+        }
+
+        .summary--button-container {
+          margin-top: 15px;
+          margin-bottom: 0;
         }
       }
 
@@ -308,8 +373,6 @@
     </style>
   </head>
   <body>
-    <img src="./design/desktop-design.jpg" />
-
     <div class="container">
       <div class="contents-container">
         <div class="result--conatiner">
