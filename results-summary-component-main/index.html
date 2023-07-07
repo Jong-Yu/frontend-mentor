@@ -374,84 +374,90 @@
   </head>
   <body>
     <div class="container">
-      <div class="contents-container">
-        <div class="result--conatiner">
-          <div class="result--section">
-            <div class="result--section-container result--title--container">
-              <span class="result--title">Your Result</span>
+      <main role="result-card">
+        <div class="contents-container">
+          <div class="result--conatiner">
+            <div class="result--section">
+              <div class="result--section-container result--title--container">
+                <span class="result--title">Your Result</span>
+              </div>
+              <div class="result--section-container result--score--container">
+                <span class="result--score">76</span>
+                <span class="result--totalscore">of 100</span>
+              </div>
+              <div class="result--section-container result--desc">
+                <h2 class="result--desc-title">Great</h2>
+                <span class="result--desc-text">
+                  You scored higher than 65% of the people who have taken these
+                  tests.
+                </span>
+              </div>
             </div>
-            <div class="result--section-container result--score--container">
-              <span class="result--score">76</span>
-              <span class="result--totalscore">of 100</span>
-            </div>
-            <div class="result--section-container result--desc">
-              <h2 class="result--desc-title">Great</h2>
-              <span class="result--desc-text">
-                You scored higher than 65% of the people who have taken these
-                tests.
-              </span>
+          </div>
+          <div class="summary--container">
+            <div class="summary--section">
+              <div class="summary--section-container summary--title-container">
+                <span class="summary--title">Summary</span>
+              </div>
+              <div class="summary--section-container summary--score-container">
+                <div class="summary--score red">
+                  <img
+                    class="summary--score--icon"
+                    src="./assets/images/icon-reaction.svg"
+                    alt="reaction-icon"
+                  />
+                  <span class="summary--score-title">Reaction</span>
+                  <div>
+                    <span class="summary--my-score">80</span>
+                    <span class="summary--max-score"> / 100</span>
+                  </div>
+                </div>
+                <div class="summary--score yellow">
+                  <img
+                    class="summary--score--icon"
+                    src="./assets/images/icon-memory.svg"
+                    alt="memory-icon"
+                  />
+                  <span class="summary--score-title">Memory</span>
+                  <div>
+                    <span class="summary--my-score">92</span>
+                    <span class="summary--max-score"> / 100</span>
+                  </div>
+                </div>
+                <div class="summary--score green">
+                  <img
+                    class="summary--score--icon"
+                    src="./assets/images/icon-verbal.svg"
+                    alt="verbal-icon"
+                  />
+                  <span class="summary--score-title">Verbal</span>
+                  <div>
+                    <span class="summary--my-score">61</span>
+                    <span class="summary--max-score"> / 100</span>
+                  </div>
+                </div>
+                <div class="summary--score blue">
+                  <img
+                    class="summary--score--icon"
+                    src="./assets/images/icon-visual.svg"
+                    alt="visual-icon"
+                  />
+                  <span class="summary--score-title">Visual</span>
+                  <div>
+                    <span class="summary--my-score">72</span>
+                    <span class="summary--max-score"> / 100</span>
+                  </div>
+                </div>
+              </div>
+              <div class="summary--section-container summary--button-container">
+                <button type="button" class="summary--section-button">
+                  Continue
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="summary--container">
-          <div class="summary--section">
-            <div class="summary--section-container summary--title-container">
-              <span class="summary--title">Summary</span>
-            </div>
-            <div class="summary--section-container summary--score-container">
-              <div class="summary--score red">
-                <img
-                  class="summary--score--icon"
-                  src="./assets/images/icon-reaction.svg"
-                />
-                <span class="summary--score-title">Reaction</span>
-                <div>
-                  <span class="summary--my-score">80</span>
-                  <span class="summary--max-score"> / 100</span>
-                </div>
-              </div>
-              <div class="summary--score yellow">
-                <img
-                  class="summary--score--icon"
-                  src="./assets/images/icon-memory.svg"
-                />
-                <span class="summary--score-title">Memory</span>
-                <div>
-                  <span class="summary--my-score">92</span>
-                  <span class="summary--max-score"> / 100</span>
-                </div>
-              </div>
-              <div class="summary--score green">
-                <img
-                  class="summary--score--icon"
-                  src="./assets/images/icon-verbal.svg"
-                />
-                <span class="summary--score-title">Verbal</span>
-                <div>
-                  <span class="summary--my-score">61</span>
-                  <span class="summary--max-score"> / 100</span>
-                </div>
-              </div>
-              <div class="summary--score blue">
-                <img
-                  class="summary--score--icon"
-                  src="./assets/images/icon-visual.svg"
-                />
-                <span class="summary--score-title">Visual</span>
-                <div>
-                  <span class="summary--my-score">72</span>
-                  <span class="summary--max-score"> / 100</span>
-                </div>
-              </div>
-            </div>
-            <div class="summary--section-container summary--button-container">
-              <button type="button" class="summary--section-button">
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
 
     <div class="attribution">
